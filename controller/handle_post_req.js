@@ -10,10 +10,10 @@ const handle_post_req = async (req, res) => {
 
   if (!body.redirectingURL) return res.send(" redirected url is required ");
 
-  const shortID = nanoid(8);
+  const shortID ="https://url-shortner-wj9w.onrender.com/"+ nanoid(8);
 
   await URL.create({
-    shortID:"https://url-shortner-wj9w.onrender.com/"+ shortID,
+    shortID: shortID,
     redirectedID: body.redirectingURL,
     visitHistory: [],
   });
