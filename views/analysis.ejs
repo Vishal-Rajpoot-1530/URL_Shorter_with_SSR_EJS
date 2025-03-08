@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis data</title>
+     <style>body {
+        /* display: flex;
+            flex-wrap: wrap;
+            justify-content: center; */
+        text-align: center;
+        background-color: rgb(249, 240, 227);
+        /* align-items: center; */
+      }
+      h1 {
+        color: aqua;
+        text-shadow: 2px 2px 2px rgb(252, 6, 6);
+      }
+      button {
+        border: 1px solid black;
+        border-radius: 5px;
+        color: rgb(29, 99, 249);
+        background-color: rgb(93, 243, 116);
+        margin: 10px;
+        padding: 5px;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+      form {
+        text-align: left;
+        margin-left: 25%;
+        margin-right: 20%;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+      }</style>
+</head>
+<body>
+    <h1>Analysis URL Clicks</h1>
+    <form action="/analysis/submit" method="post" >
+        <label for="shortID"> 
+            enter shortID hare :
+        </label>
+        <input type="text" name="shortID" placeholder=" enter shortID hare " >
+        <br>
+        <button type="submit">Analysis</button>
+    </form>
+</body>
+</html>

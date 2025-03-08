@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <style>body {
+      
+      background-color: rgb(249, 240, 227);
+        text-align: center;
+         
+      }
+      h1 {
+        color: aqua;
+        text-shadow: 2px 2px 2px rgb(252, 6, 6);
+      }
+      button {
+        border: 1px solid black;
+        border-radius: 5px;
+        color: rgb(29, 99, 249);
+        background-color: rgb(93, 243, 116);
+        margin: 10px;
+        padding: 5px;
+      }
+      button:hover {
+        transform: scale(1.1);
+      }
+      form {
+        text-align: left;
+        margin-left: 25%;
+        margin-right: 20%;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+      }
+      div{ 
+        display: flex;
+        justify-content: center;
+         
+      }
+      table{
+        border: 3px solid rebeccapurple;
+        border-collapse: collapse;
+      }
+     th, td{
+        border: 1.5px solid black;
+        padding: 2px;
+      }
+      th{
+        background-color: rgb(255, 136, 114);
+      }
+      
+      </style>
+</head>
+<body>
+    <h1>Update Successfull</h1>
+    <div>
+        <table>
+            <tr>
+            <th>srNo.</th>
+            <th>id</th>
+            <th>shortID</th>
+            <th>redirectingID</th>
+            <th>clicks</th>
+            </tr>
+             
+            <tr>
+               <td><%= num++ %></td>
+               <td><%= user._id %></td>
+               <td><%= user.shortID %></td>
+               <td><%= user.redirectedID %></td>
+               <td><%= user.visitHistory.length %></td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>

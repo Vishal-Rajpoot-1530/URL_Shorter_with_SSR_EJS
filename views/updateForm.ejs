@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update data</title>
+  <style>body {
+    background-color: rgb(249, 240, 227);
+    text-align: center;
+    /* align-items: center; */
+  }
+  h1 {
+    color: aqua;
+    text-shadow: 2px 2px 2px rgb(252, 6, 6);
+  }
+  button {
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(29, 99, 249);
+    background-color: rgb(93, 243, 116);
+    margin: 10px;
+    padding: 5px;
+  }
+  button:hover {
+    transform: scale(1.1);
+  }
+  form {
+    text-align: left;
+    margin-left: 25%;
+    margin-right: 20%;
+  }
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }</style>
+</head>
+<body>
+    <h1>Update existing URL</h1>
+    <form action="/update/submit" method="post">
+        <label for="id"> 
+            enter id hare :
+        </label>
+        <input type="text" name="id" placeholder=" enter id hare " required="true">
+        <br>
+        <label for="redirectedURL">new URL: </label>
+        <input type="text" name="redirectedURL" placeholder="http://localhost:8000/example.com" required="true">
+        <br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
