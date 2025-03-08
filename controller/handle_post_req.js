@@ -10,7 +10,7 @@ const handle_post_req = async (req, res) => {
 
   if (!body.redirectingURL) return res.send(" redirected url is required ");
 
-  const shortID ="https://url-shortner-wj9w.onrender.com/"+ nanoid(8);
+  const shortID = nanoid(8);
 
   await URL.create({
     shortID: shortID,
@@ -18,7 +18,7 @@ const handle_post_req = async (req, res) => {
     visitHistory: [],
   });
 
-  return res.status(201).send(` shortID: ${shortID}`);
+  return res.status(201).send(` shortURL: https://url-shortner-wj9w.onrender.com/${shortID}`);
 };
 
 module.exports = handle_post_req;
