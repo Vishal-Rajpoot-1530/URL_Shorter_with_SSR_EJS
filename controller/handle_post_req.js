@@ -13,7 +13,7 @@ const handle_post_req = async (req, res) => {
   const shortID = nanoid(8);
 
   await URL.create({
-    shortID: shortID,
+    shortID:"https://url-shortner-wj9w.onrender.com/"+ shortID,
     redirectedID: body.redirectingURL,
     visitHistory: [],
   });
